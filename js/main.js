@@ -85,6 +85,8 @@ function init() {
     consistantSymbol = symbolArray[randomNumber]
     symbolArray.splice(randomNumber, 1)
     states[4].maintext = manySymbols();
+    states[5].maintext = consistantSymbol;
+    states[5].smalltext = "Your symbol is " + consistantSymbol;
     render()
 }
 
